@@ -30,7 +30,7 @@ jobs:
       
     - name: Start build
       run: |
-        python3 -m twrpdtgen -o dt/ boot_b.bin
+        python3 -m twrpdtgen -o dt/ --git boot_b.bin
     - name: ZIP device tree
       run: |
         zip -r DeviceTree.zip ./dt
